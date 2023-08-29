@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../Styles/Register.css";
 
 const Register = () => {
+  const [userData,setUserData]=useState({name:"",email:"",password:"",confirmpassword:""})
+  const router =useNa();
   return (
     <>
     <div class="screen-register">
