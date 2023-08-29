@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
- #screen {
+ #screen-cart {
     height: 1000px;
     width: 100%;
     display: flex;
@@ -30,7 +30,7 @@
     margin-top: 10px;
 
  }
- .image>img{
+ .image-cart>img{
    height: 25px;
    width: 30px;
    /* border:1px solid red; */
@@ -58,11 +58,11 @@
  }
  
  
- #img{
+ #img-cart{
     width: 15%;
     height: 55px;
  }
- #part{
+ #part-cart{
     /* border-bottom: 1px solid gray; */
     width: 60%;
     height: 700px;
@@ -73,14 +73,14 @@
     
 
  }
- #left{
+ #left-cart{
     width:59%;
     height:100%;
     margin-top: 20px;
  }
 
  
- #check{
+ #check-cart{
     height: 80px;
     border:1px solid rgb(179, 179, 179);
     display: flex;
@@ -88,13 +88,13 @@
     padding-left: 15px;
     /* margin-top: 10px; */
  }
- #check>div{
+ #check-cart>div{
     display: flex;
     margin-top: 30px;
     text-align: center;
     margin-bottom:30px;
  }
- #check>div>button{
+ #check-cart>div>button{
     height: 40px;
     font-size: 10px;
     margin-left: 130px;
@@ -104,24 +104,24 @@
     padding: 5px;
 
  }
- #offer{
+ #offer-cart{
     height: 100px;
     border:1px solid rgb(179, 179, 179);
     margin-bottom: 15px;
     padding-left: 15px;
  }
 
- #offer>div>button{
+ #offer-cart>div>button{
     color: red;
     border: none;
     background-color: white;
     margin-top: 15px;;
  }
- #offer>div>p{
+ #offer-cart>div>p{
     font-size:small;
     margin-top: 10px;
  }
- #offer>div>li{
+ #offer-cart>div>li{
     font-size:large;
     font-style:normal;
     margin-top: 10px;
@@ -142,53 +142,53 @@
     margin-left: 10px;
 
  }
- #drop{
+ #drop-cart{
     display: flex;
     margin-top: 10px;
     height: 65px;
     border: 1px solid rgb(179, 179, 179);
     padding-top: 5px;
  }
- #drop>img{
+ #drop-cart>img{
     height: 40px;
     width: 35px;
     margin-top:7px;
     margin-left: 10px;
  }
- #drop>p{
+ #drop-cart>p{
     margin-left: 35px;
     margin-bottom: 40px;
  }
- #item{
+ #item-cart{
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
     margin-bottom: 30px;
     
  }
- #item>h4{
+ #item-cart>h4{
     margin-top: 10px;
     margin-left: 5px;
     font-size: 15px;
  }
- #item>div{
+ #item-cart>div{
     display: flex;
     margin-left: 100px;
  }
- #item>div>div{
+ #item-cart>div>div{
     height: 30px;
     width: 1px;
     border: 1px solid gray;
     margin-left: 10px;
  }
- #item>div>button{
+ #item-cart>div>button{
     margin-left:10px;
     border: none;
     background-color: white;
     font-size: 12px;
 
  }
- #tshirt{
+ #tshirt-cart{
     height: 200px;
     width: 100%;;
     border: 1px solid gray;
@@ -198,69 +198,69 @@
     padding: 10px;
 
  }
- #tshirt>div:nth-child(1){
+ #tshirt-cart>div:nth-child(1){
     width:35%;
     height: 100%;
 
  }
- #tshirt>div:nth-child(2){
+ #tshirt-cart>div:nth-child(2){
     width:62%;
     height: 100%;
 
  }
- #tshirt>div:nth-child(2)>h5>del{
+ #tshirt-cart>div:nth-child(2)>h5>del{
     color: gray;
     margin-left: 5px;
 
  }
- #tshirt>div:nth-child(2)>h5>span{
+ #tshirt-cart>div:nth-child(2)>h5>span{
     color: red;
     margin-left: 5px;
 
 
  }
- #tshirt>div:nth-child(2)>h4{
+ #tshirt-cart>div:nth-child(2)>h4{
     margin-bottom: 5px;
  }
- #tshirt>div:nth-child(2)>p{
+ #tshirt-cart>div:nth-child(2)>p{
     margin-bottom: 10px;
  }
- #tshirt>div:nth-child(2)>button{
+ #tshirt-cart>div:nth-child(2)>button{
     margin-bottom: 10px;
  }
- #tshirt>div:nth-child(2)>h5{
+ #tshirt-cart>div:nth-child(2)>h5{
     margin-bottom: 5px;
  }
- #tshirt>div:nth-child(2)>p:nth-child(6)>span{
+ #tshirt-cart>div:nth-child(2)>p:nth-child(6)>span{
     font-weight: bold;
  }
 
  
  
- #tshirt>div>img{
+ #tshirt-cart>div>img{
         height:100%;
         width:95%;
  }
  
- #right{
+ #right-cart{
     width:40%;
     height:640px;
     /* border:2px solid yellow; */
     border-left: 1px solid rgb(179, 179, 179);
     padding-left: 10px;
  }
- #coup{
+ #coup-cart{
     height: 90px;
     margin-top: 10px;
     border-bottom: 1px solid rgb(179, 179, 179);
     padding-left: 10px;
     /* display: flex; */
  }
-  #coup>div{
+  #coup-cart>div{
     display: flex;
   }
   
-  #coup>div>button{
+  #coup-cart>div>button{
     margin-left: 140px;
     padding:5px;
     background-color:white ;
@@ -268,11 +268,12 @@
     color: rgb(255,79,120);
     font-size:10px;
   }
-  #coup>p:nth-child(3){
+  #coup-cart>p:nth-child(3){
     margin-top: 10px;
+    /* margin-bottom: 25px; */
 
   }
-  #coup>p:nth-child(3)>span{
+  #coup-cart>p:nth-child(3)>span{
     color: red;
 
   }
@@ -301,7 +302,7 @@
     margin-top: 30px;
     
  }
- #photo{
+ #photo-cart{
     height: 450px;
     width: 60%;
     /* border: 2px solid red; */
@@ -309,56 +310,56 @@
     background-color: rgb(255,246,248);
     
  }
- #photo>hr{
+ #photo-cart>hr{
     margin-top:10px;
     border: 1px solid black;
 
  }
- #photo>h4{
+ #photo-cart>h4{
     margin-top: 10px;
     margin-bottom: 20px;
     margin-left: 20px;
  }
- #photo>div{
+ #photo-cart>div{
     display: flex;
     justify-content: space-between;
     width: 100%;
 
  }
- #photo>div>div{
+ #photo-cart>div>div{
     width: 19%;
     background-color: white;
     height: 350px;
     /* border: 1px solid black; */
  }
- #photo>div>div>img{
+ #photo-cart>div>div>img{
     width: 100%;
  }
- #photo>div>div>h4{
+ #photo-cart>div>div>h4{
     margin-left:10px ;
     margin-top: 10px;
     margin-bottom: 5px;
  }
- #photo>div>div>p:nth-child(3){
+ #photo-cart>div>div>p:nth-child(3){
         color: gray;
         font-size: 13px;
         margin-left: 10px;
         margin-bottom: 5px;
  }
- #photo>div>div>p:nth-child(4)>span:nth-child(1){
+ #photo-cart>div>div>p:nth-child(4)>span:nth-child(1){
         font-size: 14px;
         font-weight: bold;
 
  }
- #photo>div>div>p:nth-child(4)>del:nth-child(2){
+ #photo-cart>div>div>p:nth-child(4)>del:nth-child(2){
         font-size: 14px;
         color: grey;
  }
- #photo>div>div>p:nth-child(4)>span:nth-child(3){
+ #photo-cart>div>div>p:nth-child(4)>span:nth-child(3){
         font-size: 14px;
         color: red;
  }
- #photo>div>div>div{
+ #photo-cart>div>div>div{
     height: 50px;
     width: 91%;
     border-top: 1px solid gray;
@@ -366,7 +367,7 @@
     
     margin-top: 15px;
  }
- #photo>div>div>div>p{
+ #photo-cart>div>div>div>p{
     margin-left: 30px;
     margin-top: 15px;
     font-size: 13px;

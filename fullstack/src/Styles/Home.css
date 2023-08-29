@@ -5,13 +5,13 @@
     box-sizing: border-box;
 }
 
-#screen {
+#screen-home {
     height: 1000px;
     width: 100%;
     /* border:2px solid red; */
 }
 
-#screen>div {
+#screen-home>div {
     margin-bottom: 50px;
 }
 

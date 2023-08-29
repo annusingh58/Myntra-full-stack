@@ -3,9 +3,9 @@ import "../Styles/Cart.css";
 
 const Cart = () => {
   return (
-    <div id="screen">
+    <div id="screen-cart">
         <div id="navbar">
-            <div class="image">
+            <div class="image-cart">
                 <img src="https://images.indianexpress.com/2021/01/myntra.png"/>
             </div>
             <div>
@@ -16,15 +16,15 @@ const Cart = () => {
                 <p>100%Secure</p>
             </div>
         </div>
-        <div id="part">
-            <div id="left">
-                <div id="check">
+        <div id="part-cart">
+            <div id="left-cart">
+                <div id="check-cart">
                    <div>
                     <h4>Check delivery time & services</h4>
                     <button> ENTER PIN CODE</button>
                    </div>
                 </div>
-                <div id="offer">
+                <div id="offer-cart">
                     <div>
                        <li>Available Offers</li>
                         <p>10% Instant Discount on ICICI Credit And Debit Card on min spend on Rs 3,500.TCA</p>
@@ -35,7 +35,7 @@ const Cart = () => {
                     <img src="https://constant.myntassets.com/checkout/assets/img/ship-free.webp"/>
                     <p> Yay ! <b>No convenience fee</b> on this order.</p>
                 </div>
-                <div id="drop">
+                <div id="drop-cart">
                     <div>
                     <img src="https://constant.myntassets.com/checkout/assets/img/price-drop.webp"/>
                 </div>
@@ -45,15 +45,15 @@ const Cart = () => {
                     <p>The price and seller of one or more items in your bag has changed.Buy Them Now!</p>
                 </div>
             </div>
-                <div id="item">
+                <div id="item-cart">
                     <input type="checkbox"/>
                     <h4>0/1 ITEMS SELECTED </h4>
                     <div>
                     <button> REMOVE </button> <div></div><button> MOVE TO WISHLIST</button>
                 </div>
             </div>
-                <div id="tshirt">
-                    <div id="img">
+                <div id="tshirt-cart">
+                    <div id="img-cart">
                     <img src="https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14047672/2021/5/17/c1fd89a5-6364-4d0b-bde4-fcc0b7ddd1571621252467672-Louis-Philippe-Men-Navy-Blue-Solid-Polo-Collar-T-shirt-71816-1.jpg" />
                     </div>
                     <div id="name">
@@ -71,8 +71,8 @@ const Cart = () => {
 
 
             
-            <div id="right">
-                <div id="coup">
+            <div id="right-cart">
+                <div id="coup-cart">
                 <p>coupons</p>
                 <div>
                 <h5>Apply Coupons</h5> 
@@ -90,7 +90,7 @@ const Cart = () => {
             </div>
 
         </div>
-        <div id="photo">
+        <div id="photo-cart">
             <hr/>
             <h4> You May also like :</h4>
             <div>

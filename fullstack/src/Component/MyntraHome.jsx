@@ -4,7 +4,7 @@ import "../Styles/Home.css";
 const MyntraHome =() => {
   return (
     <>
-     <div id="screen">
+     <div id="screen-home">
 
 <div id="navbar">
     <div>

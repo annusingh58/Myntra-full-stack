@@ -4,7 +4,7 @@ import "../Styles/Single.css";
 const Single = () => {
   return (
     
-    <div id="screen">
+    <div id="screen-single">
     <div id="navbar">
         <div>
             <img src="https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2021/01/30/913689-1.1.4-2.jpg?im=Resize=(1280,720)"
@@ -53,14 +53,14 @@ const Single = () => {
         </div>
     </div>
 
-    <div id="body">
+    <div id="body-single">
 
         <p>Home/Clothing/Men Clothing/Tshirts/Minions By Kook N Keech Tshirts More By Minions By Kook N Keech
         </p>
     </div>
     
-    <div id="mainbody">
-        <div id="bodyimg">
+    <div id="mainbody-single">
+        <div id="bodyimg-single">
             <div>
                 <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8923841/2019/6/3/736b9f2c-3a49-41a9-828c-1e0218b62e431559550212164-Minions-by-Kook-N-Keech-Men-Purple-Printed-Round-Neck-T-shir-1.jpg"
                     alt="img-1" />
@@ -83,7 +83,7 @@ const Single = () => {
             </div>
         </div>
         
-        <div id="info">
+        <div id="info-single">
             <div>
                 <h1 id="name">Minions by Kook N Keech</h1>
                 <p>Men Purple Boxy Fit Printed Round Neck Pure Cotton T-shirt</p>

@@ -4,7 +4,7 @@ import "../Styles/Multiplepage.css";
 const Multiplepage = () => {
   return (
     <>
-    <div id="screen">
+    <div id="screen-multiple">
 
 <div id="navbar">
     <div>
@@ -55,11 +55,11 @@ const Multiplepage = () => {
 </div>
 
 
-<div id="slider">
+<div id="slider-multiple">
     <img
         src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2023/2/14/7cec9b95-a683-473c-aca8-cc510821b1cd1676394720493-Desktop-Banner.gif" />
 </div>
-<div id="productsT"></div>
+{/* <div id="productsT"></div> */}
 </div>
     </>
   )

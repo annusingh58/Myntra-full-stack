@@ -4,15 +4,15 @@ import "../Styles/Login.css";
 const Login = () => {
   return (
     <>
-     <div class="screen">
-       <div class="body">
-        <div class="body1">
+     <div class="screen-login">
+       <div class="body-login">
+        <div class="body1-login">
             <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/2/7/59a76460-3a85-4d4b-b517-faef119c50551675792734635-offer-banner-200-600x240-code-_-MYNTRA200.jpg"/>
         </div>
         <form onsubmit="login(event)">
 
                 
-            <div class="info">
+            <div class="info-login">
                 <h3>Login</h3>
                 
                 <div><input id="lemail" type="email" placeholder="Enter your email id" /></div>
