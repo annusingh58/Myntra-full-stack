@@ -47,7 +47,7 @@ const Register = () => {
       }
     }
     else{
-      alert("all field are required");
+      alert("All field are required");
   }
   }
 
@@ -58,7 +58,7 @@ const Register = () => {
         <div class="body1-register">
             <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/2/7/59a76460-3a85-4d4b-b517-faef119c50551675792734635-offer-banner-200-600x240-code-_-MYNTRA200.jpg"/>
         </div>
-        <form onsubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}>
 
                 
             <div class="info-register">

@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import "../Styles/Home.css";
+import { AuthContext } from './Context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 const MyntraHome =() => {
+    const {state,dispatch}=useContext(AuthContext); 
+    const username = state?.user?.name;
+    const router=useNavigate();
+    const Logout=()=>{
+        dispatch({
+            type:"LOGOUT"
+        })
+    }
   return (
-    <>
+    
      <div id="screen-home">
 
 <div id="navbar">
@@ -13,7 +23,7 @@ const MyntraHome =() => {
 
     </div>
     <div id="nb1">
-        <div style={{cursor:'pointer'}} onclick="window.location.href=`./multipleproductmyntra.html`">
+        <div>
             <h3>MEN</h3>
         </div>
         <div>
@@ -41,11 +51,15 @@ const MyntraHome =() => {
     <div id="navbarr">
         <div id="switch">
             <i class="fa-regular fa-user "></i>
-            <h5 >Profile</h5>
+            {username?<h3>{username}</h3>:<h3 onClick={()=>router('/login')}>LOGIN</h3>}
+
+            {/* <h5 >Profile</h5> */}
         </div>
         <div id="Logout">
             <i class="fa-regular fa-heart "></i>
-            <h5 >Wishlist</h5>
+            {/* <h5 >Wishlist</h5> */}
+            {username?<button onClick={Logout}>LOGOUT</button>:<button></button>}
+
         </div>
         <div>
             <i class="fa-regular fa-bag-shopping "></i>
@@ -576,7 +590,7 @@ const MyntraHome =() => {
 
 </div>
 
-    </>
+    
   )
 }
 
