@@ -1,3 +1,4 @@
+import logo from './logo.svg';
 
 import './App.css';
 import {Routes,Route} from 'react-router-dom';
@@ -13,8 +14,7 @@ import Cart from './Component/Cart';
 
 function App() {
   return (
-    <div className="App">
-      
+<>   
   <Routes>
     <Route exact path='/register' element={<Register />}/>
     <Route exact path='/login' element={<Login />}/>
@@ -25,7 +25,7 @@ function App() {
 
     </Routes>      
       
-    </div>
+    </>
   );
 }
 
