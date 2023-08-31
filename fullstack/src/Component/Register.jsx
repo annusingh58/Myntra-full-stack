@@ -3,8 +3,12 @@ import "../Styles/Register.css";
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import { toast } from 'react-hot-toast';
+
+
 const Register = () => {
   const [userData,setUserData]=useState({name:"",email:"",password:"",confirmpassword:""})
+  
+  
   const router =useNavigate();
   console.log(userData,"userData");
 
@@ -22,8 +26,11 @@ const Register = () => {
           password:userData.password,
           confirmpassword:userData.confirmpassword
         });
+
         console.log(response,"response")
+
          const data=response.data;
+
          console.log(data,"data");
          if(data.success){
           toast(data.message);
@@ -45,7 +52,7 @@ const Register = () => {
   }
 
   return (
-    <>
+    
     <div class="screen-register">
        <div class="body-register">
         <div class="body1-register">
@@ -68,7 +75,7 @@ const Register = () => {
         </form>
        </div>
     </div>
-    </>
+    
   )
 }
 

@@ -8,7 +8,7 @@ export const register=async(req,res)=>{
 
         const{name,email,password}=req.body;
         const response=await USER.find({email}).exec();
-        if(response.length)return res.status(400).son({status:400,success:false,message:"user already registered"});
+        if(response.length)return res.status(400).son({status:400,success:false, message:"user already registered"});
             
         const user=new USER({
                 name,
