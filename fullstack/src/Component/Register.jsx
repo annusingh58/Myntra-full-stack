@@ -9,7 +9,7 @@ const Register = () => {
   const [userData,setUserData]=useState({name:"",email:"",password:"",confirmpassword:""})
   
   
-  const router =useNavigate();
+  const router = useNavigate();
   console.log(userData,"userData");
 
   const handelChange=(event)=>{
@@ -39,7 +39,7 @@ const Register = () => {
          }
 
       } catch (error) {
-        console.log(error)
+        // console.log(error)
         if(!error.response.data.success){
             alert(error.response.data.message);
         }
@@ -53,15 +53,15 @@ const Register = () => {
 
   return (
     
-    <div class="screen-register">
-       <div class="body-register">
-        <div class="body1-register">
+    <div className="screen-register">
+       <div className="body-register">
+        <div className="body1-register">
             <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2023/2/7/59a76460-3a85-4d4b-b517-faef119c50551675792734635-offer-banner-200-600x240-code-_-MYNTRA200.jpg"/>
         </div>
         <form onSubmit={handleSubmit}>
 
                 
-            <div class="info-register">
+            <div className="info-register">
                 <h3>Sign Up</h3>
                 <div><input name="name" type="text" placeholder="User Name" onChange={handelChange} /></div>
                 <div><input name="email" type="email" placeholder="Enter your email id" onChange={handelChange} /></div>
