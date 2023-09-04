@@ -20,7 +20,7 @@ function App() {
     <Route exact path='/login' element={<Login />}/>
     <Route exact path ='/myntrahome' element={<MyntraHome />}/>
     <Route exact path='/multiplepage' element={<Multiplepage/>}/>
-    <Route exact path='/single'element={<Single/>}/>
+    <Route exact path='/single/:id'element={<Single/>}/>
     <Route exact path='/cart' element={<Cart/>}/>
 
     </Routes>      

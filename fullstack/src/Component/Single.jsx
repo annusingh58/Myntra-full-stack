@@ -1,9 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "../Styles/Single.css";
+import {useParams} from 'react-router-dom';
+import axios from 'axios';
 
 const Single = () => {
+    const[product,setProduct]=useState();
+    const{id} = useParams();
+
+    console.log(id);
+    useEffect(()=>{
+        async function getProduct(){
+            try {
+                const response=await axios.post("http://localhost:2000/myntra/getsingleProduct",{id});
+                
+                console.log(response);
+                if(response){
+                    setProduct(response.data.product);
+
+                }
+            } catch (error) {
+                alert("error")
+                
+            }
+        }getProduct();
+    },[id]);
   return (
-    
+    <>
+    {/* <AuthProtected> */}
+
     <div id="screen-single">
     <div id="navbar">
         <div>
@@ -59,33 +83,31 @@ const Single = () => {
         </p>
     </div>
     
-    <div id="mainbody-single">
-        <div id="bodyimg-single">
+    {product ?  <div id="mainbody-single">
+      <div id="bodyimg-single">
             <div>
-                <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/8923841/2019/6/3/736b9f2c-3a49-41a9-828c-1e0218b62e431559550212164-Minions-by-Kook-N-Keech-Men-Purple-Printed-Round-Neck-T-shir-1.jpg"
-                    alt="img-1" />
+                <img src={product.image} />
             </div>
             <div>
-                <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8923841/2019/6/3/a21db48e-5fa4-4bd6-8a52-203745f247611559550212145-Minions-by-Kook-N-Keech-Men-Purple-Printed-Round-Neck-T-shir-2.jpg"
-                    alt="img-1" />
+                <img src={product.image}/>
+                     
             </div>
             <div>
-                <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8923841/2019/6/3/7d2bb3b5-b6a9-4cac-ab1f-814071ac32f11559550212123-Minions-by-Kook-N-Keech-Men-Purple-Printed-Round-Neck-T-shir-3.jpg"
-                    alt="img-1" />
+                <img src={product.image}/>
             </div>
             <div>
-                <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8923841/2019/6/3/c8e2c851-ad44-4623-9df0-b03995554c431559550212101-Minions-by-Kook-N-Keech-Men-Purple-Printed-Round-Neck-T-shir-4.jpg"
-                    alt="img-1" />
+                <img src={product.image} />
             </div>
             <div>
-                <img src="https://assets.myntassets.com/h_720,q_90,w_540/v1/assets/images/8923841/2019/6/3/361af51e-4174-419c-aebc-3bb80120d8f31559550212090-Minions-by-Kook-N-Keech-Men-Purple-Printed-Round-Neck-T-shir-5.jpg"
-                    alt="img-1" />
+                <img src={product.image} />
             </div>
+
         </div>
+    
         
         <div id="info-single">
             <div>
-                <h1 id="name">Minions by Kook N Keech</h1>
+                <h1>{product.name}</h1>
                 <p>Men Purple Boxy Fit Printed Round Neck Pure Cotton T-shirt</p>
                 <div>
                     <p><b>4.2 <i class="fa-solid fa-star"></i></b>| 2.8k Ratings</p>
@@ -94,7 +116,7 @@ const Single = () => {
 
 
             <div>
-                <p><span id="price">₹771 </span><span>MRP <del>₹999</del></span> <span> (28% OFF)</span></p>
+                <p><span id="price">₹{product.price} </span><span>MRP <del>₹{product.price}</del></span> <span> (28% OFF)</span></p>
                 <p>inclusive of all taxes</p>
                 <p><span>SELECT SIZE</span><span>SIZE CHART&nbsp;&nbsp;&nbsp;</span></p>
                 <div>
@@ -119,6 +141,8 @@ const Single = () => {
                     <button><i class="fa-regular fa-heart"></i>WHISLIST</button>
                 </div>
             </div>
+           
+
 
 
             <div>
@@ -222,11 +246,18 @@ const Single = () => {
 
 
         </div>
+        </div>:
+        <div>Loading..</div>
+            }
+   
+
+
     </div>
+{/* </AuthProtected> */}
+</>
 
-
-</div>
   )
 }
+
 
 export default Single

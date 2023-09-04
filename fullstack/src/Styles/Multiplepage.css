@@ -151,13 +151,7 @@
             width: 100%;
             height: 100%;
         }
-        #productsT{
-            width:100%;
-            height:350px;
-            border:1px solid red;
-            display: flex;
-            justify-content: space-between;
-           }
+        
            
            #singlePro{
             width:26%;
@@ -170,5 +164,71 @@
             height: 80%;
 
            }
+          
+          
+           .productsT{
+            /* height: 1000px; */
+            width : 100%;
+            /* border:1px solid green; */
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .productsT>div{
+            height: 400px;
+            width:24%;
+            /* border:1px solid gray; */
+            margin-bottom: 45px;
+        
+        
+        }
+        .productsT>div:hover{
+            box-shadow: 8px 10px 18px gainsboro ;
+        
+        
+        }
+        
+        
+        
+        .productst>div>div:nth-child(1){
+            height: 250px;
+            width:100%;
+            /* border:5px solid red; */
+        }
+        .productsT>div>div:nth-child(1)>img{
+            height: 100%;
+            width: 100%;
+            /* border:1px solid black; */
+        }
+        .productsT>div>div:nth-child(2){
+            height:120px;
+            width: 100%;
+            /* border: 1px solid yellow; */
+            padding: 10px;
+        }
+        .productsT>div>div:nth-child(2)>h6{
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .productsT>div>div:nth-child(2)>h5{
+            margin-top: 9px;
+            font-size: 16px;
+        }
+       
+        .productsT>div>div:nth-child(2)>button{
+            height: 35px;
+            width:100%;
+            font-weight: bold;
+            border: 1px solid brown;
+            font-size: 14px;
+            background-color: white;
+            margin-top: 10px;
+        }
+        .productsT>div>div:nth-child(2)>button:hover{
+            background-color: brown;
+            color: white;
+            border: none;
+        }
          
         
