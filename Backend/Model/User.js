@@ -4,7 +4,8 @@ import mongoose from "mongoose";
 const user=new Schema({
     name:String,
     email:String,
-    password:String
+    password:String,
+    cartProducts:[String]
 
 });
 

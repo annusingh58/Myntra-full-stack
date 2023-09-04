@@ -39,8 +39,7 @@ root.render(
        },
      }}
    />
-       <HandleAuthContext>
-
+    <HandleAuthContext>
     <App />
     </HandleAuthContext>
 

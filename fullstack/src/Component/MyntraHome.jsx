@@ -26,7 +26,7 @@ const MyntraHome =() => {
         <div>
             <h3>MEN</h3>
         </div>
-        <div>
+        <div onClick={()=>router('/multiplepage')}>
             <h3>WOMEN</h3>
         </div>
         <div>

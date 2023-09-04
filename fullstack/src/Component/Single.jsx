@@ -1,17 +1,33 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import "../Styles/Single.css";
-import {useParams} from 'react-router-dom';
+import {useNavigate, useParams} from 'react-router-dom';
 import axios from 'axios';
+import { AuthContext } from './Context/AuthContext';
 
 const Single = () => {
     const[product,setProduct]=useState();
     const{id} = useParams();
+    const {state}=useContext(AuthContext);
+    console.log(state);
+    const router=useNavigate();
 
-    console.log(id);
+    async function addCart(){
+        try {
+            const response=await axios.post("http://localhost:2000/myntra/addToCart",{userId:state?.user?._id,productId:id})
+            if(response.data.success){
+                alert(response.data.message);
+                router('/cart')
+            }
+        } catch (error) {
+            alert(error.respose.data.message)
+        }
+    }
+
     useEffect(()=>{
         async function getProduct(){
             try {
                 const response=await axios.post("http://localhost:2000/myntra/getsingleProduct",{id});
+                
                 
                 console.log(response);
                 if(response){
@@ -24,6 +40,8 @@ const Single = () => {
             }
         }getProduct();
     },[id]);
+
+   
   return (
     <>
     {/* <AuthProtected> */}
@@ -84,7 +102,7 @@ const Single = () => {
     </div>
     
     {product ?  <div id="mainbody-single">
-      <div id="bodyimg-single">
+      <div  id="bodyimg-single">
             <div>
                 <img src={product.image} />
             </div>
@@ -137,7 +155,7 @@ const Single = () => {
                     </div>
                 </div>
                 <div id="cart">
-                    <button><i class="fa-solid fa-bag-shopping"></i>ADD TO BAG</button>
+                    <button onClick={addCart}><i class="fa-solid fa-bag-shopping"></i>ADD TO BAG</button>
                     <button><i class="fa-regular fa-heart"></i>WHISLIST</button>
                 </div>
             </div>

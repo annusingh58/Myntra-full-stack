@@ -56,19 +56,17 @@ export const login=async(req,res)=>{
 export const get_currentuser=async(req,res)=>{
     try {
         const{token}=req.body;
+        // console.log(token);
         const dectoken=jwt.verify(token,process.env.JWT);
         const userId=dectoken.userId;
-        const user=await USER.findbyID(userId);
+        const user=await USER.findById(userId);
 
         console.log(user);
         if(user){
             return res.status(200).json({status:200,success:true,user})
         }
-
-
-        
     } catch (error) {
-        return res.status(500).json({status:500,success:false,message:error});
+        return res.status(500).json({status:500,success:false,message:"Internal server error"});
  
     }
 }

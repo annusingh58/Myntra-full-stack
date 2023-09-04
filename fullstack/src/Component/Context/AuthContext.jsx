@@ -27,16 +27,17 @@ const HandleAuthContext=({children})=>{
     useEffect(()=>{
         const token =JSON.parse(localStorage.getItem("JWTToken"));
         async function getcurrentuser(){
-           if(token){
-            const response=await axios.post("http://localhost:2000/myntra/getcurrentuser",{token})
-         
-            if(response.data.success){
-                dispatch({
-                    type:"LOGIN",
-                    payload:response?.data?.user
-                })
+            if(token){
+                const response=await axios.post("http://localhost:2000/myntra/getcurrentuser",{
+                    token
+                });
+                if(response.data.success){
+                    dispatch({
+                        type:"LOGIN",
+                        payload:response?.data?.user
+                    })
+                }
             }
-           }
         }
         getcurrentuser();
     },[])

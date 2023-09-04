@@ -26,6 +26,7 @@ const Login = () => {
               });
               console.log(response,"response")
               const data=response.data;
+              console.log(data?.user)
               if(data.success){
                   dispatch({
                       type:"LOGIN",

@@ -22,7 +22,6 @@ function App() {
     <Route exact path='/multiplepage' element={<Multiplepage/>}/>
     <Route exact path='/single/:id'element={<Single/>}/>
     <Route exact path='/cart' element={<Cart/>}/>
-
     </Routes>      
       
     </>
