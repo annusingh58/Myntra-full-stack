@@ -3,7 +3,7 @@ import "../Styles/Cart.css";
 import { AuthContext } from './Context/AuthContext';
 import axios from 'axios';
 import api from '../ApiConfig';
-;
+
 
 
 

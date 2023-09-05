@@ -58,8 +58,8 @@ export const getSingleProduct=async(req,res)=>{
 export const addToCart=async(req,res)=>{
     try {
         const {userId,productId}=req.body;
-        if(!userId) return res.status(404).json({status:404,success:true,message:"UserId not found"});
-        if(!productId) return res.status(404).json({status:404,success:true,message:"productId not found"});
+        if(!userId) return res.status(404).json({status:404,success:false,message:"UserId not found"});
+        if(!productId) return res.status(404).json({status:404,success:false,message:"productId not found"});
 
         const user=await USER.findByIdAndUpdate(userId,{$push:{cartProducts:productId}},{new:true})
         if(!user){
