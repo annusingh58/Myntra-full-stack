@@ -1,7 +1,8 @@
 import {  useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../Component/Context/AuthContext";
-
+ import { toast } from "react-hot-toast";
+ 
 function AuthProtected({children}){
     const {state}=useContext(AuthContext);
     const router=useNavigate();
@@ -13,7 +14,7 @@ function AuthProtected({children}){
             }, 3000);
         }
     },[state])
-    if(state?.user?.name){
+    if(state?.user?.role){
         return(
             children
         )
