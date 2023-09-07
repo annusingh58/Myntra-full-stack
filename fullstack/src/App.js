@@ -8,13 +8,15 @@ import MyntraHome from './Component/MyntraHome';
 import Multiplepage from './Component/Multiplepage';
 import Single from './Component/Single';
 import Cart from './Component/Cart';
+import Navbar from './Global/Navbar';
 
 
 
 
 function App() {
   return (
-<>   
+<>  
+    <Navbar />
   <Routes>
     <Route exact path='/register' element={<Register />}/>
     <Route exact path='/login' element={<Login />}/>

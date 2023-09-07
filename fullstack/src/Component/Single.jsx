@@ -3,6 +3,7 @@ import "../Styles/Single.css";
 import {useNavigate, useParams} from 'react-router-dom';
 import axios from 'axios';
 import { AuthContext } from './Context/AuthContext';
+import AuthProtected from "../AuthProtected/index";
 
 const Single = () => {
     const[product,setProduct]=useState();
@@ -43,11 +44,12 @@ const Single = () => {
 
    
   return (
+    <AuthProtected>
     <>
-    {/* <AuthProtected> */}
+   
 
     <div id="screen-single">
-    <div id="navbar">
+    {/* <div id="navbar">
         <div>
             <img src="https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2021/01/30/913689-1.1.4-2.jpg?im=Resize=(1280,720)"
                 alt="sreen-logo" />
@@ -93,7 +95,7 @@ const Single = () => {
                 <h5 style={{paddingLeft:"5px"}}>Bag</h5>
             </div>
         </div>
-    </div>
+    </div> */}
 
     <div id="body-single">
 
@@ -271,9 +273,9 @@ const Single = () => {
 
 
     </div>
-{/* </AuthProtected> */}
-</>
 
+</>
+</AuthProtected>
   )
 }
 

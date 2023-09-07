@@ -16,7 +16,7 @@ const MyntraHome =() => {
     
      <div id="screen-home">
 
-<div id="navbar">
+{/* <div id="navbar">
     <div>
         <img src="https://english.cdn.zeenews.com/sites/default/files/styles/zm_700x400/public/2021/01/30/913689-1.1.4-2.jpg?im=Resize=(1280,720)"
             alt="sreen-logo" />
@@ -53,20 +53,20 @@ const MyntraHome =() => {
             <i class="fa-regular fa-user "></i>
             {username?<h3>{username}</h3>:<h3 onClick={()=>router('/login')}>LOGIN</h3>}
 
-            {/* <h5 >Profile</h5> */}
-        </div>
-        <div id="Logout">
-            <i class="fa-regular fa-heart "></i>
-            {/* <h5 >Wishlist</h5> */}
-            {username?<button onClick={Logout}>LOGOUT</button>:<button></button>}
+//             {/* <h5 >Profile</h5> */}
+{/* //         </div> */}
+{/* //         <div id="Logout">
+//             <i class="fa-regular fa-heart "></i>
+//             {/* <h5 >Wishlist</h5> */}
+{/* //             {username?<button onClick={Logout}>LOGOUT</button>:<button></button>}
 
-        </div>
-        <div>
-            <i class="fa-regular fa-bag-shopping "></i>
-            <h5 style={{paddingLeft:'20px'}}>Bag</h5>
-        </div>
-    </div>
-</div>
+//         </div> */}
+{/* //         <div>
+//             <i class="fa-regular fa-bag-shopping "></i>
+//             <h5 style={{paddingLeft:'20px'}}>Bag</h5>
+//         </div>
+//     </div> */} 
+{/* // </div> */} 
 
 
 <div id="slider">

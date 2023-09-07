@@ -28,7 +28,7 @@ const Cart = () => {
     console.log(addCart);
     return (
         <div id="screen-cart">
-            <div id="navbar">
+            {/* <div id="navbar">
                 <div class="image-cart">
                     <img src="https://images.indianexpress.com/2021/01/myntra.png" />
                 </div>
@@ -39,7 +39,7 @@ const Cart = () => {
                     <img src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png" />
                     <p>100%Secure</p>
                 </div>
-            </div>
+            </div> */}
             <div id="part-cart">
                 <div id="left-cart">
                     <div id="check-cart">

@@ -6,7 +6,7 @@ import { toast } from 'react-hot-toast';
 
 
 const Register = () => {
-  const [userData,setUserData]=useState({name:"",email:"",password:"",confirmpassword:""})
+  const [userData,setUserData]=useState({name:"",email:"",password:"",confirmpassword:"",role:"buyer"})
   
   
   const router = useNavigate();
@@ -24,7 +24,8 @@ const Register = () => {
           name:userData.name,
           email:userData.email,
           password:userData.password,
-          confirmpassword:userData.confirmpassword
+          confirmpassword:userData.confirmpassword,
+          role:userData.role
         });
 
         console.log(response,"response")
@@ -67,6 +68,12 @@ const Register = () => {
                 <div><input name="email" type="email" placeholder="Enter your email id" onChange={handelChange} /></div>
                 <div><input name="password" type="password" placeholder="Enter your password" onChange={handelChange}/></div>
                 <div><input name="confirmpassword" type="confirmpassword" placeholder="Confirmpassword" onChange={handelChange}/></div>
+                <div>
+                  <select name="role" onChange={handelChange}>
+                    <option value="buyer">Buyer</option>
+                    <option value="seller" >Seller</option>
+                  </select>
+                </div>
                 <div><input type="submit" value="SignUp" /> </div>
                 <p>By continuing, I agree to the <b>Term of Use</b> & <b>Privacy policy</b></p>
 
