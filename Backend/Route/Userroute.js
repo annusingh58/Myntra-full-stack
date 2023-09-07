@@ -2,6 +2,8 @@ import express from "express";
 import { get_currentuser, login, register } from "../Controllers/Usercontrollers.js";
 import { loginchk, registerchk } from "../Middleware/Auth.js";
 import  { addProduct, addToCart, getCartProducts, getSingleProduct, getallproducts } from "../Controllers/ProductControllers.js";
+
+
 const router =express.Router();
 
 
