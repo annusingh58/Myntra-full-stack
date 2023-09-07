@@ -32,12 +32,7 @@ const Navbar = () => {
     <div>
         <h3>Delete Product</h3>
     </div>
-    {/* <div>
-        <h3>HOME & LIVING</h3>
-    </div>
-    <div>
-        <h3>BEAUTY</h3>
-    </div> */}
+  
     <div>
         <h3>STUDIO<sup style={{color:'red'}}>NEW</sup></h3>
     </div>
@@ -74,11 +69,9 @@ const Navbar = () => {
             <i class="fa-regular fa-user "></i>
             {username?<h3>{username}</h3>:<h3 onClick={()=>router('/login')}>LOGIN</h3>}
 
-            {/* <h5 >Profile</h5> */}
         </div>
         <div id="Logout">
             <i class="fa-regular fa-heart "></i>
-            {/* <h5 >Wishlist</h5> */}
             {username?<button onClick={Logout}>LOGOUT</button>:<button></button>}
 
         </div>
